@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint lib __tests__"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,19 @@
     "generator"
   ],
   "author": "Christian Maré",
-  "license": "GPLv2",
+  "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/anyhotcountry/anyhotpass-lib/issues"
   },
   "homepage": "https://github.com/anyhotcountry/anyhotpass-lib#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
     "jest": "^25.5.2"
   },
   "dependencies": {

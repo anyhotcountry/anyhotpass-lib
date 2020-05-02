@@ -1,31 +1,32 @@
+/*
+ * AnyHotPass library
+ * https://github.com/anyhotcountry/anyhotpass-lib
+ * License: GPLv2
+ */
+
 import generate from '../lib/generate';
 
-test('generate password as expected', () => {
-  const password = generate('Test123', 'google.com', 18);
-  expect(password).toBe('qErqeg-2cocny-wijfic');
-});
-
 test.each([
-  ['Test01', 'google.com', 'gYhkaz-buspi4-sipzyx'],
-  ['Test02', 'google.com', 'pOlzin-nitjal-kuvhe5'],
-  ['Test03', 'google.com', 'gyVwoz-nuwne1-sufkam'],
-  ['Test04', 'google.com', 'qocgIb-tuszon-0mylke'],
-  ['Test05', 'google.com', 'hynpa5-susvyk-gilmoB'],
-  ['Test06', 'google.com', 'lecwoz-wovkEh-8tidve'],
-  ['Test07', 'google.com', 'Cyvjof-dipzi3-dedrad'],
-  ['Test08', 'google.com', 'xoqfa6-bivjov-mipluX'],
-  ['Test09', 'google.com', 'nevse9-fiwMul-zogjuf'],
-  ['Test10', 'google.com', 'xApzuh-muznow-netwu4'],
-  ['Test11', 'bing.com', 'xigpaw-sarxi3-zodrEr'],
-  ['Test12', 'bing.com', 'magsyk-synty7-cUxtip'],
-  ['Test13', 'bing.com', 'gepdun-8pijre-joDmiq'],
-  ['Test14', 'bing.com', 'hoglyf-levta0-nuNjor'],
-  ['Test15', 'bing.com', 'jipVic-buzsi0-lawmat'],
-  ['Test16', 'bing.com', 'xalTil-liwxo5-qazsyh'],
-  ['Test17', 'bing.com', 'xeBder-favse5-xiflal'],
-  ['Test18', 'bing.com', 'vefxUq-3necgo-kytsib'],
-  ['Test19', 'bing.com', 'gilguq-4sogho-kozNad'],
-  ['Test20', 'bing.com', 'hymme8-kephyB-juzmaf']
+  ['Test01', 'google.com', 'zijnij-zOhnad-xatco0'],
+  ['Test02', 'google.com', 'vagru5-fasraz-perGub'],
+  ['Test03', 'google.com', 'qojxyr-Rajden-0redre'],
+  ['Test04', 'google.com', 'defjyM-1pevna-juptum'],
+  ['Test05', 'google.com', 'Tyrhud-ruclum-0rekge'],
+  ['Test06', 'google.com', 'moqka6-Bajpit-takhal'],
+  ['Test07', 'google.com', 'hiXmoq-dejtol-8pejvi'],
+  ['Test08', 'google.com', 'ketfa7-secfus-majsaP'],
+  ['Test09', 'google.com', 'xysme7-Wuwhuz-haqxip'],
+  ['Test10', 'google.com', 'gejre2-pesSif-pydhef'],
+  ['Test11', 'bing.com', 'vynlom-baljy6-fyflYr'],
+  ['Test12', 'bing.com', 'tUnryq-gexfut-hedfo5'],
+  ['Test13', 'bing.com', 'zutfo3-Golqed-rakhyr'],
+  ['Test14', 'bing.com', 'pEwfuk-cyhrel-dytgi9'],
+  ['Test15', 'bing.com', 'vuzjah-2kinxe-kikzIk'],
+  ['Test16', 'bing.com', 'gecby0-fulfoL-nypdyc'],
+  ['Test17', 'bing.com', 'nofli5-Qycran-welxez'],
+  ['Test18', 'bing.com', 'rajzo6-nendyf-sUgnug'],
+  ['Test19', 'bing.com', 'mogba2-diDkon-norduk'],
+  ['Test20', 'bing.com', 'tyjjer-8dijto-Wyhfah'],
 ])('generate("%s", "%s")', (master, domain, expected) => {
   const actual = generate(master, domain, 18);
   expect(actual).toBe(expected);

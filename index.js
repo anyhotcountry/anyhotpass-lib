@@ -1,11 +1,9 @@
-/*!
+/*
  * AnyHotPass library
  * https://github.com/anyhotcountry/anyhotpass-lib
- * License: MIT
+ * License: GPLv2
  */
 
 import generate from './lib/generate';
 
-export {
-  generate
-};
+export default generate;

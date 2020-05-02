@@ -1,0 +1,10 @@
+{
+    "parser": "babel-eslint",
+    "extends": "eslint-config-airbnb",
+    "rules": {
+        "linebreak-style": 0
+    },
+    "env": {
+        "jest": true
+    }
+  }
