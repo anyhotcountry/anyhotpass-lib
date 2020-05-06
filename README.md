@@ -56,6 +56,9 @@ The password rules I have observed from studying iOS generate passwords are:
 8. The number can be at the start of a 6 character group, shifting the other characters forward meaning the group will end in a vowel
 9. The number can also occur at the end of a 6 character group, replacing the final consonant.
 10. The number and uppercase letter cannot be in the same 6 character group
+11. The following letters are not allowed: `['O', 'l', 'L']`
+
+I have adhered to the rules above except that I am allowing `'L'`.
 
 ## Tests
 

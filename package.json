@@ -1,11 +1,13 @@
 {
   "name": "anyhotpass-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Password generator library that produce passwords similar to iOS suggested password feature.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "compile": "babel src --out-dir dist",
     "test": "jest",
-    "lint": "eslint lib __tests__"
+    "lint": "eslint src __tests__",
+    "sample": "babel-node sample.js"
   },
   "repository": {
     "type": "git",
@@ -25,25 +27,33 @@
   },
   "homepage": "https://github.com/anyhotcountry/anyhotpass-lib#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
     "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
-    "jest": "^25.5.2"
+    "jest": "^25.5.4"
   },
   "dependencies": {
     "crypto-js": "^4.0.0"
   },
   "babel": {
-    "env": {
-      "test": {
-        "plugins": [
-          "@babel/plugin-transform-modules-commonjs"
-        ]
-      }
-    }
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
   }
 }

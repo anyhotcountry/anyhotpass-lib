@@ -7,7 +7,7 @@
 /* eslint no-bitwise: ["error", { "allow": ["|", "<<"] }] */
 
 import sha512 from 'crypto-js/sha512';
-import trigraphs from '../lib/enc-trigraphs';
+import trigraphs from '../src/lib/enc-trigraphs';
 
 test('Length must be a multiple of 6', () => {
   const t = () => {
