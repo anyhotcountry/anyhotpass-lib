@@ -1,6 +1,6 @@
 {
   "name": "anyhotpass-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Password generator library that produce passwords similar to iOS suggested password feature.",
   "main": "dist/index.js",
   "scripts": {
